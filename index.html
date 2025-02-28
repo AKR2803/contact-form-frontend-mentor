@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png" sizes="32x32">
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <title>Frontend Mentor - Contact form</title>
+</head>
+
+<body>
+  
+  <form action="#" class="form-container">
+    <h1>Contact Us</h1>
+
+    <div class="name-container">
+      <div class="name-field">
+        <label for="first-name">First Name <span class="green-text">*</span> </label>
+        <input type="text" name="first-name" id="first-name" autocomplete="on">
+        <span class="error-text">This field is required</span>
+      </div>
+
+      <div class="name-field">
+        <input type="text" name="last-name" id="last-name">
+        <span class="error-text">This field is required</span>
+      </div>
+    </div>
+
+    <div class="email-container">
+      <label for="email">Email Address <span class="green-text">*</span></label>
+      <input type="email" name="email" id="email" placeholder="email#example.com">
+      <span class="error-text">Please enter a valid email address</span>
+    </div>
+
+    <div class="query-container">
+      <label>Query Type</label>
+      <div class="query-field">
+
+        <div class="radio-field">
+          <label><input type="radio" name="query-type" value="general">General Enquiry</label>
+        </div>
+
+        <div class="radio-field">
+          <label><input type="radio" name="query-type" value="support">Support Request</label>
+        </div>
+      </div>
+
+      <span class="error-text-radio">Please select a query type</span>
+    </div>
+
+    <div class="message-container">
+      <label for="message">Message <span class="green-text">*</span></label>
+      <textarea name="message" id="message" rows="4" placeholder="Message here..."></textarea>
+
+      <span class="error-text">This field is required</span>
+    </div>
+
+    <div class="consent-container">
+      <label><input type="checkbox" name="consent">I consent to being contacted by the team<span
+          class="green-text">*</span></label>
+
+      <span class="error-text-checkbox">To submit this form, please consent to being contacted</span>
+    </div>
+
+    <input type="submit" value="Submit" id="submit-btn">
+
+  </form>
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>

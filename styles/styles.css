@@ -1,0 +1,298 @@
+:root{
+    --green-200: hsl(148, 38%, 91%);
+    --green-600: hsl(169, 82%, 27%);
+    --green-700: hsl(169, 96%, 20%);
+    --red: hsl(0, 66%, 54%);
+}
+
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: var(--green-200);
+}
+
+label{
+    font-size: 1rem;
+}
+
+.error-text, .error-text-radio, .error-text-checkbox{
+    color: var(--red);
+    font-size: 0.8rem;
+    display: none;
+}
+
+
+/* especially for all green asterisks * */
+.green-text{
+    color: var(--green-600);
+}
+
+input{
+    padding: 0.5rem 1rem;
+    font-family: 'Karla', sans-serif;
+    border-radius: 0.3rem;
+    border: 1.5px solid;
+}
+
+.message-container textarea{
+    border: 1.5px solid;
+}
+
+
+/* ----------------form---------------- */
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
+    width: 45%;
+    max-width: 600px;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+input[type="text"]{
+    font-size: 1rem;
+    border: 1.5px solid #506e50;
+}
+
+
+input[type="text"]:focus{
+    border: 2px solid var(--green-600);
+    outline: none;
+}
+
+input[type="text"]:hover{
+    cursor: pointer;
+}    
+
+
+/* --------------name-------------- */
+
+.name-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+.name-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    gap: 0.4rem;
+}
+
+/* --------------email-------------- */
+
+input[type="email"]{
+    font-size: 1rem;
+}
+
+input[type="email"]:focus{
+    border: 2px solid var(--green-600);
+    outline: none;
+}
+
+input[type="email"]:hover{
+    cursor: pointer;
+}
+
+.email-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.4rem;
+}
+
+
+/* --------------radio buttons-------------- */
+
+.query-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.query-field{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.radio-field{
+    display: flex;
+    width: 50%;
+} 
+
+.radio-field label{
+    display: block;
+    padding: 0.7rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    width: 100%;
+    border: 1.5px solid;
+    border-radius: 0.3rem;
+}
+
+.radio-field input[type="radio"]{
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    accent-color: var(--green-600);
+}
+
+.radio-field input[type="radio"]:hover{
+    cursor: pointer;
+}
+
+/* ----------handle radio button selection---------- */
+
+.consent-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+}
+
+.consent-container input[type="checkbox"]{
+    vertical-align: middle;
+    accent-color: var(--green-600);
+    margin-right:10px;
+}
+
+.consent-container label{
+    font-size: 1rem;
+}
+
+.consent-container input[type="checkbox"]:hover, .consent-container label:hover{
+    cursor: pointer;
+}
+
+
+/* --------------message container-------------- */
+
+.message-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 100%;
+}
+
+.message-container textarea{
+    resize: none;
+    border-radius: 0.3rem;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    letter-spacing: -0.2px;
+    line-height: 1.5;
+}
+
+.message-container textarea:focus{
+    border: 2px solid var(--green-600);
+    outline: none;
+}
+
+.message-container textarea:hover{
+    cursor: pointer;
+}
+
+
+/* -------------submit button------------- */
+input[type="submit"]{
+    padding: 1rem 0;
+    border: none;
+    background-color: var(--green-600);
+    color: #fff;
+    transition: 0.2s all ease-in;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--green-700);
+    cursor: pointer;
+}
+
+/* -----------tablets viewports------------- */
+
+@media screen and (max-width: 760px){
+    
+    body{
+        width: 100vw;
+        padding: 1rem 0;
+        justify-content: center;
+    }
+    
+    form{
+        width: 90%;
+    }
+
+    .name-container{
+        flex-wrap: wrap;
+        justify-content: stretch;
+    }
+    
+    .name-field{
+        width: 100%;
+    }
+    
+    .query-field{
+        flex-wrap: wrap;
+        justify-content: stretch;
+    }
+    
+    .radio-field{
+        width: 100%;
+    }
+    
+    .consent-container label{
+        font-size: 0.8rem;
+    }
+}
+
+
+/* -----------mobile viewports------------- */
+
+@media screen and (max-width: 480px){
+    body{
+        align-items: flex-start;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+    }
+
+    label{
+        font-size: 0.8rem;
+    }
+
+    input[type="text"], input[type="email"]{
+        font-size: 0.6rem;
+    }
+
+    .message-container textarea{
+        font-size: 0.6rem;
+    }
+
+    .error-text, .error-text-radio, .error-text-checkbox{
+        font-size: 0.6rem;
+    }
+
+    .consent-container label{
+        font-size: 0.6rem;
+    }
+}
