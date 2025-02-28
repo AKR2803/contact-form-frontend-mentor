@@ -1,6 +1,6 @@
-# Frontend Mentor - Contact form solution
+# Frontend Mentor - Contact form solution [[Live Here](https://contact-form-frontend-mentor-rouge.vercel.app/)]
 
-This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj).
 
 ## Overview
 
@@ -10,8 +10,8 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/AKR2803/contact-form-frontend-mentor)
+- Live Site URL: [Add live site URL here](https://contact-form-frontend-mentor-rouge.vercel.app/)
 
 ## My process
 
@@ -28,9 +28,9 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 
 ### Useful resources
 
-- [Arrays .some() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some#parameters) 
-  - This method can especially be useful to check if some radio button is checked among a group of radio buttns.
-  - [In the code]() the method is used something like this:
+- [Arrays .some() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some#parameters) : This method can especially be useful to check if some radio button is checked among a group of radio buttons.
+- [In the code](https://github.com/AKR2803/contact-form-frontend-mentor/blob/main/script/script.js#L64) the method is used something like this:
+
   ```javascript
     let radios = document.querySelectorAll("input[type='radio']");
     
@@ -54,8 +54,3 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
         }
     }
   ```
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
