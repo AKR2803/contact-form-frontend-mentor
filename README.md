@@ -10,8 +10,8 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AKR2803/contact-form-frontend-mentor)
-- Live Site URL: [Add live site URL here](https://contact-form-frontend-mentor-rouge.vercel.app/)
+- Solution URL: [https://github.com/AKR2803/contact-form-frontend-mentor]
+- Live Site URL: [https://contact-form-frontend-mentor-rouge.vercel.app/]
 
 ## My process
 
